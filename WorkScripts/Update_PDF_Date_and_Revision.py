@@ -12,7 +12,7 @@ def main():
     revision = "2"
 
     # Date: set to desired date format within quotations
-    date = "MAR 10, 2020"
+    date = "MAR 11, 2020"
 
     os.chdir(directory)
 
@@ -21,7 +21,7 @@ def main():
 
         # Finds length of file name, removes ending (PG# DATE) to be replaced
         i = 0
-        for i in range(0, len(filename)):
+        for i in range(len(filename)-1, 0, -1):
             if filename[i] == "(":
                 break
 
